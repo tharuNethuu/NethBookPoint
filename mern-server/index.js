@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 //middleware
 app.use(cors({
-  origin: ['https://nethbookpoint.onrender.com'],
+  origin: ['https://nethbookpoint-front.onrender.com'],
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
