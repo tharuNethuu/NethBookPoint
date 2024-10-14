@@ -17,7 +17,7 @@ const [alertVisible, setAlertVisible] = useState(false);
 
   const handleSearch = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/searchBook?name=${searchTerm}`);
+      const response = await fetch(`https://nethbookpoint.onrender.com/searchBook?name=${searchTerm}`);
       const data = await response.json();
 
       if (data.book) {

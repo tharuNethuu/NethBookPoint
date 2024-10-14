@@ -13,7 +13,7 @@ const NotificationPage = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    fetch(`http://localhost:5000/notifications/${email}`)
+    fetch(`https://nethbookpoint.onrender.com/notifications/${email}`)
       .then(response => response.json())
       .then(data => setMessages(data))
       .catch(error => console.error('Error fetching notifications:', error));

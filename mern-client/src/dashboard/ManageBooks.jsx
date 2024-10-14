@@ -11,14 +11,14 @@ const ManageBooks = () => {
   const [alertVariant, setAlertVariant] = useState('success');
   const [alertVisible, setAlertVisible] = useState(false);
   useEffect(() =>{
-    fetch("http://localhost:5000/all-books").then(res => res.json()).then(data => setAllBooks(data));
+    fetch("https://nethbookpoint.onrender.com/all-books").then(res => res.json()).then(data => setAllBooks(data));
   },[])
 
   //delete books
   const handleDelete = (id) => {
     const confirmed = window.confirm("Are you sure you want to delete this book?");
     if (confirmed) {
-      fetch(`http://localhost:5000/book/${id}`, {
+      fetch(`https://nethbookpoint.onrender.com/book/${id}`, {
         method: "DELETE",
       }).then(res => res.json()).then(data => {
         setAlertMessage("Book is deleted successfully!");

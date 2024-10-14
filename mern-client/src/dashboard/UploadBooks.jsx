@@ -42,7 +42,7 @@ const UploadBooks = () => {
     console.log(booksObj)
 
     //send data to database
-    fetch("http://localhost:5000/upload-book",{
+    fetch("https://nethbookpoint.onrender.com/upload-book",{
       method:"POST",
       headers:{
         "Content-Type":"application/json",

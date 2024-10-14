@@ -9,7 +9,7 @@ const SortingPage = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        let url = 'http://localhost:5000/ordersdelivery?status=Yes';
+        let url = 'https://nethbookpoint.onrender.com/ordersdelivery?status=Yes';
         if (selectedPerson) {
           url += `&assignedPerson=${selectedPerson}`;
         }

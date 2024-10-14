@@ -59,7 +59,7 @@ import ProvinceOrders from "../DeliverySec/ProvinceOrders";
         {
           path: "/book/:id",
           element: <SingleBook/>,
-          loader:({params}) => fetch (`http://localhost:5000/books/${params.id}`)
+          loader:({params}) => fetch (`https://nethbookpoint.onrender.com/books/${params.id}`)
         }
 
       ]
@@ -90,7 +90,7 @@ import ProvinceOrders from "../DeliverySec/ProvinceOrders";
         {
           path: "/admin/dashboard/edit-books/:id",
           element: <EditBooks/>,
-          loader:({params}) => fetch (`http://localhost:5000/books/${params.id}`)
+          loader:({params}) => fetch (`https://nethbookpoint.onrender.com/books/${params.id}`)
         
         },{
           path: "/admin/dashboard/notifications/:email",

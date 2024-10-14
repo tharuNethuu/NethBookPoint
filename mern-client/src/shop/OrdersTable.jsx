@@ -15,7 +15,7 @@ const OrdersTable = () => {
   const [alertVisible, setAlertVisible] = useState(false);
 
   useEffect(() => {
-    fetch('http://localhost:5000/orders')
+    fetch('https://nethbookpoint.onrender.com/orders')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -30,7 +30,7 @@ const OrdersTable = () => {
   }, []);
 
   const handleDelete = async (orderId) => {
-    const response = await fetch(`http://localhost:5000/orders/${orderId}`, {
+    const response = await fetch(`https://nethbookpoint.onrender.com/orders/${orderId}`, {
       method: 'DELETE'
     });
 
@@ -49,7 +49,7 @@ const OrdersTable = () => {
   };
 
   const handleStatusChange = async (orderId, newStatus) => {
-    const response = await fetch(`http://localhost:5000/orders/${orderId}`, {
+    const response = await fetch(`https://nethbookpoint.onrender.com/orders/${orderId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -80,7 +80,7 @@ const OrdersTable = () => {
   const people = ["Person 1", "Person 2", "Person 3", "Person 4", "Person 5"];
 
 const handleAssignPersonChange = async (orderId, assignedPerson) => {
-  const response = await fetch(`http://localhost:5000/orders/${orderId}/assign`, {
+  const response = await fetch(`https://nethbookpoint.onrender.com/orders/${orderId}/assign`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json'

@@ -19,7 +19,7 @@ const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    fetch("http://localhost:5000/all-books").then(res => res.json()).then(data => { if (selectedCategory === 'All') {
+    fetch("https://nethbookpoint.onrender.com/all-books").then(res => res.json()).then(data => { if (selectedCategory === 'All') {
       setBooks(data);
     } else {
       setBooks(data.filter(book => book.category === selectedCategory));

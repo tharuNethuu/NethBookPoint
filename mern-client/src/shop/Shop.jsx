@@ -16,7 +16,7 @@ const Shop = () => {
     window.scrollTo(0, 0);});
 
   useEffect (() => {
-fetch("http://localhost:5000/all-books").then(res => res.json()).then(data=> setBooks(data));
+fetch("https://nethbookpoint.onrender.com/all-books").then(res => res.json()).then(data=> setBooks(data));
   }, [])
 
   return (
@@ -66,7 +66,7 @@ const Shop = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    fetch("http://localhost:5000/all-books").then(res => res.json()).then(data => setBooks(data));
+    fetch("https://nethbookpoint.onrender.com/all-books").then(res => res.json()).then(data => setBooks(data));
   }, []);
 
   const addItemToWishList = (bookId) => {

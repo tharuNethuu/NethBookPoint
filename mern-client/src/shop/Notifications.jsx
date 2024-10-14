@@ -15,7 +15,7 @@ const Notifications = () => {
   const [alertVisible, setAlertVisible] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/notifications/${email}`)
+    fetch(`https://nethbookpoint.onrender.com/notifications/${email}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -31,7 +31,7 @@ const Notifications = () => {
     console.log(`Sending message: ${newMessage} to ${email}`);
 
     try {
-      const response = await fetch(`http://localhost:5000/notifications/${email}`, {
+      const response = await fetch(`https://nethbookpoint.onrender.com/notifications/${email}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ const Notifications = () => {
 
   const handleDeleteMessage = async (messageId) => {
     try {
-      const response = await fetch(`http://localhost:5000/notifications/${email}/${messageId}`, {
+      const response = await fetch(`https://nethbookpoint.onrender.com/notifications/${email}/${messageId}`, {
         method: 'DELETE'
       });
   

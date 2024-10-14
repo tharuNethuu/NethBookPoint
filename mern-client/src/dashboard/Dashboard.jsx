@@ -11,7 +11,7 @@ const Dashboard = () => {
   const fetchData = async () => {
     try {
       // Fetch books data
-      const booksResponse = await fetch('http://localhost:5000/all-books');
+      const booksResponse = await fetch('https://nethbookpoint.onrender.com/all-books');
       if (!booksResponse.ok) {
         throw new Error('Books network response was not ok');
       }
@@ -19,7 +19,7 @@ const Dashboard = () => {
       console.log('Books data:', booksData);
 
       // Fetch orders data
-      const ordersResponse = await fetch('http://localhost:5000/orders');
+      const ordersResponse = await fetch('https://nethbookpoint.onrender.com/orders');
       if (!ordersResponse.ok) {
         throw new Error('Orders network response was not ok');
       }

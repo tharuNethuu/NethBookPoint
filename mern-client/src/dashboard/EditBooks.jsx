@@ -37,7 +37,7 @@ const EditBooks = () => {
       bookTitle, authorName, category, bookDescription, Price, imageUrl, availability,offerImage,SinhalaDes,EnglishDes
     };
 
-    fetch(`http://localhost:5000/book/${id}`, {
+    fetch(`https://nethbookpoint.onrender.com/book/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"
