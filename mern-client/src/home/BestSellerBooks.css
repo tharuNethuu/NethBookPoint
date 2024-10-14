@@ -1,0 +1,18 @@
+.content{
+    margin-top: 250px;
+}
+
+
+.bestTitle{
+   color: black;
+   font-size: 40px;
+   font-weight: 600;
+    font-family: 'Bona Nova', sans-serif;
+   margin-bottom: -100px;
+   text-align: center;
+
+}
+.bookcards{
+    margin-top: -80px;
+    padding-bottom: 5px;
+}

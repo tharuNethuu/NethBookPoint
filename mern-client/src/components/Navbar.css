@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&display=swap');
+.bg-image {
+    background-image: url('./navbar1.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .Shopname{
+    /*text-2xl font-bold text-yellow-500 flex items-center gap-10*/
+    color: #CC9600;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Bona Nova', sans-serif;
+    line-height: 32px;
+    letter-spacing: 1px;
+    
+  }
+  .navItems{
+    font-family: 'Bona Nova', sans-serif;
+    font-weight: 100;
+  }
+  .text-custom-yellow {
+    color: #CC9600;
+
+  }
+
+  .text-custom-white {
+    color: #e2e2e2;
+    font-weight: lighter;
+
+  }
+
+  .text-yellow-400 {
+  margin: 0;
+  padding: 0;
+}
+
+  

@@ -1,0 +1,12 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  background-color: white; /* Optional background color */
+}
+
+.loading-gif {
+  width: 300px; /* Set the size for the gif */
+  height: auto;
+}

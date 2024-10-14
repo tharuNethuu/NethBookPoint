@@ -1,0 +1,53 @@
+.bookdetails{
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 18px;
+    flex: 1; 
+    font-family: 'Bona Nova', sans-serif;
+
+}
+/* Container for each book card */
+.swiper-slide {
+    /* Adjust width and height as needed */
+    width: 100px; /* Example width */
+    height: 500px; /* Example height */
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  /* Image styling */
+  .swiper-slide img {
+    width: 550px;
+    height: 300px; /* Adjust height to control image size */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    margin-top: 15px;
+ 
+  }
+  
+  
+  
+  
+  /* Optional: Style for the cart icon container */
+  .swiper-slide .relative {
+    position: relative;
+  }
+  
+  .swiper-slide .absolute {
+    position: absolute;
+    top: 10px; /* Adjust top position */
+    right: 10px; /* Adjust right position */
+  }
+/* Additional styles for center alignment */
+
+img {
+  max-width: 100%; /* Ensure the image scales properly */
+}
+
+.relative img{
+  transition: transform 0.3s ease;
+}
+  
+.relative:hover img {
+  transform: scale(1.15); /* Enlarge the image to 120% of its original size */
+}

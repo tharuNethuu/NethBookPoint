@@ -1,0 +1,28 @@
+.bannerheading {
+        color: transparent; /* Make text color transparent to show gradient */
+        background: radial-gradient(circle, #FF7700, #CC9600); /* Define the radial gradient */
+        -webkit-background-clip: text; /* Clip the background to the text for WebKit browsers */
+        background-clip: text; /* Clip the background to the text for other browsers */
+        font-size: 44px;
+        font-family: 'Bona Nova', sans-serif; /* Ensure the font is loaded */
+        font-weight: bolder;
+        letter-spacing: 0.96px;
+        word-wrap: break-word;
+    }
+.bannerp{
+   padding-top: 15px;
+}
+.inputfield {
+    font-family: 'Bona Nova', sans-serif;
+    width: 395px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px #CC9600 solid;
+    background-color: transparent; /* Make background transparent */
+    color: black; /* Text color of the input field */
+    padding-left: 10px; /* Adjust padding as needed */
+}
+
+.inputfield::placeholder {
+    color: gray; /* Placeholder text color */
+}

@@ -1,0 +1,13 @@
+.image-container {
+    display: inline-block; /* Ensure the container fits around the image */
+    overflow: hidden; /* Hide overflow to prevent image from overflowing its container */
+  }
+  
+  .image-container img {
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.2); /* Enlarge the image to 120% of its original size */
+  }
+  
