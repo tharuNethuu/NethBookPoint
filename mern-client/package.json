@@ -12,6 +12,7 @@
   "dependencies": {
     "@blueprintjs/core": "^5.10.3",
     "@emailjs/browser": "^4.4.1",
+    "@paypal/react-paypal-js": "^8.7.0",
     "@stripe/react-stripe-js": "^2.8.1",
     "@stripe/stripe-js": "^4.7.0",
     "bootstrap": "^5.3.3",
